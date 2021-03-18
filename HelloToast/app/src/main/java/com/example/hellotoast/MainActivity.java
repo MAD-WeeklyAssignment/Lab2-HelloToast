@@ -24,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
         toast.show();
     }
 
-    
+    public void countUp(View view) {
+        ++mCount;
+        if (mShowCount != null)
+            mShowCount.setText(Integer.toString(mCount));
+    }
 
 }
